@@ -1,0 +1,72 @@
+body {
+	background-color: rgb(200,200,200); 
+	margin:0; /* by default, the body and html elements all come with margins and padding*/
+	padding: 0; /* example */
+}
+
+#container {
+	position: relative; /* to center content you need to have it set to relative */
+	margin: 0 auto; /* top and bottom have margins of 0, left / right margins are evenly seperated */ 
+	/*margin-left: 20%;*/
+	width: 80%;
+	background-color: rgba(200,0,0,0.5);
+	padding: 10px;
+}
+
+#container h1,h2 {
+	font-family: 'Droid Serif', serif;
+}
+
+#container p,li{
+	font-family: 'Helvetica';
+}
+
+.left {
+	position: relative; /*since the contrainer div is already relative, any divs inside is already relative, so technically you don't need this. */
+	float: left; 
+	width: 49%;
+	/*margin-right: 20%;*/
+	height: 100%;
+	border: 1px solid black; /* if you declare the width 49% and then add a 1px border, the actual with of your element 49% + 1px. It's the same with margins
+	/*overflow: auto;*/
+}
+
+.right {
+	position: relative;
+	float: right;
+	width: 49%;
+	height: 100%;
+	border: 1px solid black;
+}
+
+#footer p {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	background: #00cd66; 
+}
+
+
+.green{
+	color: rgb(27,100,0);
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+.item {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+#box01 {background-color: red;}
+#box02 {background-color: blue;}
+#box03 {background-color: limegreen;}
+#box04 {background-color: crimson;}
+#box05 {background-color: yellow;}
+#box06 {background-color: aqua;}

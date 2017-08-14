@@ -1,0 +1,105 @@
+#div1 {
+	width: 100px;
+	height: 100px;
+	background: red;
+	transition: width 2s;
+}
+
+#div1:hover {
+	width: 300px;
+}
+
+/*There are other triggers*/
+/*:hover  :target	:focus	 :checked  :active	:disabled*/
+
+
+#div2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s linear;
+}
+
+#div2:hover {
+	width: 300px;
+}
+
+
+/*There are other transition effect*/
+/*linear	ease 	ease-in 	ease-out 	ease-in-out */
+
+
+div#translate {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    /*transform: translate(30px); */
+}
+
+div#rotate {
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    /*transform: rotate(20deg); */
+}
+
+div#scale {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid black;
+    /*transform: scale(1,2);*/
+}
+
+
+div#translate:hover {
+    transform: translate(30px); 
+}
+
+div#rotate:hover {
+    transform: rotate(20deg); 
+}
+
+div#scale:hover {
+    transform: scale(1,2);
+}
+
+#transition_transformation {
+  width: 100px;
+  height: 100px;
+  background: red;
+  padding: 40px;
+  transition: width 2s, height 2s, transform 2s;
+}
+#transition_transformation:hover {
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px; 
+          transform: rotate(90deg);}
+    50%  {background-color:blue; left:200px; top:200px; 
+          transform: rotate(180deg);}
+    75%  {background-color:green; left:0px; top:200px; 
+          transform: rotate(270deg);}
+    100% {background-color:red; left:0px; top:0px; 
+          transform: rotate(360deg);}
+}
+
+#keyframe_animation {
+	width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;
+}
+
+

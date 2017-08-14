@@ -1,0 +1,64 @@
+html, body {
+	margin: 0; /* by default, the body and html elements all come with margins and paddings */
+	padding: 0;
+}
+
+#wrap {
+	position: relative; /* to center content, you have to have it set to relative */
+	margin: 0 auto; /* top and bottom have 0 margins, left right margins are evenly spaced */
+	width: 80%; /* default width is 100% of the browser, so unless you make width smaller, it won't look centered */
+	background: #ccc; /* giving a div a background helps showing how a div is positioned while coding */
+}
+
+.left {
+	position: relative;  /* since the wrap div is already relative, any divs inside it is also relative, so technically you don't need to declare this relative. But if your wrapper div was anything else, you would need to declare this relative for floats to work. */
+	float: left;
+	width: 49%;
+	height: 250px;
+	border: 1px solid #000; /* if you declare the width 49% and then add a 1px border, the actual width of your element is 49%+1px. Same with margins, if you have a 10px left right margin, your width would be 49%+10px+10px. */
+}
+
+.right {
+	position: relative;
+	float: right;
+	width: 49%;
+	height: 250px;
+	border: 1px solid #000;
+}
+
+.clear {
+	clear: both;
+}
+
+#header {
+	margin-bottom: 100px; /* gives the header a bottom margin of 100px that pushes everything that is positioned relative to it away 100px */
+	border: 1px solid yellow;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	background: green;
+}
+
+#footer p {
+	position: relative;
+	margin: 20px auto;
+	padding: 10px 20%;
+	width: 500px;
+	background: #00cd66;
+}
+
+h1 {
+	color: blue;
+}
+
+.green {
+	color: green;
+}
+
+#red {
+	color: red;
+}

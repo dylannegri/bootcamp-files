@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Land of Sparkly Unicorns</title>
+<link rel="stylesheet"  type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<!-- CREATE A WRAPPER DIV THAT WILL CENTER EVERYTHING -->
+<div id="wrap"> <!-- we're using id because we're wrapping everything in this one wrapper -->
+
+	<!-- SPAN TWO COLUMNS AT TOP -->
+	<div id="header">
+		<h1>Welcome to the Land of Sparkly Unicorns</h1>
+		<p>Welcome to the Land of Sparkly Unicorns, overseen by <b>Commander Sven</b>. This is where unicorns make bubbly, sparkling <i>magic</i>. Razzle dazzle!</p>
+	</div>
+
+	<!-- LEFT COLUMN -->
+	<div class="left"> <!-- we're using class because there might be more than one left column in the future -->
+		<h2>List of Unicorns Residing in Unicorn Land</h2>
+		<ul>
+			<li class="green">Sour Apple Pie</li>
+			<li>Lavender Sprinkle</li>
+			<li>Sunflower Sugar Wings</li>
+			<li id="red">Super Velvet</li>
+		</ul>
+	</div>
+
+	<!-- RIGHT COLUMN -->
+	<div class="right"> <!-- we're using class because there might be more than one right column in the future -->
+		<h2>List of Unicorn Foods</h2>
+		<ul>
+			<li>Cinnamon Rolls</li>
+			<li>Vanilla Ice Cream</li>
+			<li class="green">Brocolli</li>
+			<li>Caramel</li>
+			<li>Strawberries</li>
+		</ul>
+	</div>
+
+	<div class="clear"></div> <!-- you need to add something with a clear: both style after things you float left and right to break into the next line, otherwise it will just keep floating on the same level unless the content of it exceeds the width of your outer element -->
+
+
+<!-- CLOSING DIV FOR THE WRAPPER --> 
+</div>
+
+	<!-- SPANS TWO COLUMNS AT BOTTOM -->
+	<!-- THIS IS FOOTER, IT IS OUTSIDE OF THE WRAPPER SO IT DOESN'T GET WRAPPED -->
+	<div id="footer">
+		<p>A long time ago, when the earth was green <br />
+			and there was more kinds of animals than you've ever seen, <br />
+			and they run around free while the world was bein' born, <br />
+			and the lovliest of all was the Unicorn.</p>
+
+		<p><i> -- The Unicorn from the book "Where the Sidewalk Ends" (1974)</i></p>
+		
+		<p><a href="http://google.com">Click here to find more unicorns.</a></p>
+	</div>
+
+
+</body>
+</html>
