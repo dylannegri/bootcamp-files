@@ -17,21 +17,39 @@ for(var i =0; i<boxes.length; i++){
 		boxes[i].style.backgroundColor = "red";
 }
 
-var red = true;
+var item1 = true;
 
 function changeStuff(){
-	if(red){
-		for(var i = 0; i < boxes.length; i++){
-			boxes[i].style.width = "30px";
-			boxes[i].style.height = "80px";
-			boxes[i].style.backgroundColor = "blue";
-			boxes[i].style.marginLeft = "10px";
-		} red=false;
-	} else {
-		for(var i = 0; i < boxes.length; i++){
-			boxes[i].style.width = "30px";
-			boxes[i].style.height = "30px";
-			boxes[i].style.backgroundColor = "red";
-		} red=true;
+	if(item1){
+		document.getElementById("item1").style.display = "none";
+		document.getElementById("item2").style.display = "block";
+		document.getElementById("item3").style.display = "none";
+		item1 = false;
+	} else if (!item1) {
+		document.getElementById("item1").style.display = "block";
+		document.getElementById("item2").style.display = "none";
+		document.getElementById("item3").style.display = "none";
+		item1 = true;
 	}
+	document.addEventListener('click', function(){
+		document.getElementById("item1").style.display = "none"
+		document.getElementById("item2").style.display = "none";
+		document.getElementById("item3").style.display = "block";
+	});
 }
+
+	// if(red){
+	// 	for(var i = 0; i < boxes.length; i++){
+	// 		boxes[i].style.width = "30px";
+	// 		boxes[i].style.height = "80px";
+	// 		boxes[i].style.backgroundColor = "blue";
+	// 		boxes[i].style.marginLeft = "10px";
+	// 	} red=false;
+	// } else {
+	// 	for(var i = 0; i < boxes.length; i++){
+	// 		boxes[i].style.width = "30px";
+	// 		boxes[i].style.height = "30px";
+	// 		boxes[i].style.backgroundColor = "red";
+	// 	} red=true;
+	// }
+//}

@@ -8,9 +8,9 @@ body, a{
 	margin: 0;
 	color: white;
 }
-.clear {
-	clear: both;
-}
+
+.clear { clear: both; }
+
 header{
 	position: fixed;
 	z-index: 10;
@@ -57,8 +57,15 @@ section .items {
 	float: left;
 	text-align: center;
 	margin: 5px;
+	background-color: rgba(0,0,255,1);
+	transition: all 1s;
 }
-#item1{background: #37BC9B;}
+
+section .items:hover{
+	background-color: rgba(0,0,255,.2);
+}
+
+/*#item1{background: #37BC9B;}
 #item2{background: #DA4453;}
 #item3{background: #F6BB42;}
 #item4{background: #3BAFDA;}
@@ -69,7 +76,15 @@ section .items {
 #item9{background: #8CC152;}
 #item10{background: #967ADC;}
 #item11{background: #E6E9ED; color: #333}
-#item12{background: #AAB2BD; color: #333}
+#item12{background: #AAB2BD; color: #333}*/
+
+.words{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+}
+
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 500px) and (min-device-width: 500px){
